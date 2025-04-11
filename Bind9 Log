@@ -1,0 +1,11 @@
+spoon@spoon-VirtualBox:~$ sudo tail -f /var/log/syslog | grep named
+2025-04-11T12:51:39.620064-04:00 spoon-VirtualBox named[29611]: zone 127.in-addr.arpa/IN: loaded serial 1
+2025-04-11T12:51:39.620085-04:00 spoon-VirtualBox named[29611]: zone 255.in-addr.arpa/IN: loaded serial 1
+2025-04-11T12:51:39.620107-04:00 spoon-VirtualBox named[29611]: zone twoticketstoeverywhere.com/IN: loaded serial 2025041102
+2025-04-11T12:51:39.620124-04:00 spoon-VirtualBox named[29611]: all zones loaded
+2025-04-11T12:51:39.620144-04:00 spoon-VirtualBox named[29611]: FIPS mode is disabled
+2025-04-11T12:51:39.620165-04:00 spoon-VirtualBox named[29611]: running
+2025-04-11T12:51:39.620185-04:00 spoon-VirtualBox named[29611]: zone twoticketstoeverywhere.com/IN: sending notifies (serial 2025041102)
+2025-04-11T12:51:39.620206-04:00 spoon-VirtualBox named[29611]: zone twoticketstoeverywhere.com/IN: sending notify to 71.135.79.146#53
+2025-04-11T12:51:39.620282-04:00 spoon-VirtualBox named[29611]: managed-keys-zone: Key 20326 for zone . is now trusted (acceptance timer complete)
+2025-04-11T12:51:39.620306-04:00 spoon-VirtualBox named[29611]: managed-keys-zone: Key 38696 for zone . is now trusted (acceptance timer complete)
