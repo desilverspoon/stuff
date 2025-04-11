@@ -1,0 +1,46 @@
+poon@spoon-VirtualBox:~$ dig +trace ns1.twoticketstoeverywhere.com
+
+; <<>> DiG 9.20.0-2ubuntu3.1-Ubuntu <<>> +trace ns1.twoticketstoeverywhere.com
+;; global options: +cmd
+.			442724	IN	NS	f.root-servers.net.
+.			442724	IN	NS	i.root-servers.net.
+.			442724	IN	NS	a.root-servers.net.
+.			442724	IN	NS	h.root-servers.net.
+.			442724	IN	NS	e.root-servers.net.
+.			442724	IN	NS	k.root-servers.net.
+.			442724	IN	NS	m.root-servers.net.
+.			442724	IN	NS	d.root-servers.net.
+.			442724	IN	NS	g.root-servers.net.
+.			442724	IN	NS	l.root-servers.net.
+.			442724	IN	NS	b.root-servers.net.
+.			442724	IN	NS	j.root-servers.net.
+.			442724	IN	NS	c.root-servers.net.
+.			442724	IN	RRSIG	NS 8 0 518400 20250423170000 20250410160000 53148 . PhfcmrttYIpM53/s1S/mhZYljr8tCfckCp8l02eOxBgNL5JXbuesJlMu pov6gPVBpCH+2Edsc0niTpWlkfVcN3G+UB4Dn/jA/XXNWRaEwonU4CFH Vp7qlxDjPh8XWvTirz1W5ua188orNDZxJ1Ih26tUhGrYFG4xxy/mfxhO ih+MZhcLu/w5KiEne43QWVfUV1WCuyq86IAiHv5n8X4ExtJaPOIm3ZyX o60XrEmB+ud3MVRvN+a3eG0or48MQI7HekmThDKxv/SBaocyrrSLRaVH 6h0uVXkYfd0UvP4aTHgZ5HYVsw96Ju7ruRhWy8VmJZhiO7FaIUyKDMpq 84evTQ==
+;; Received 1109 bytes from 127.0.0.53#53(127.0.0.53) in 15 ms
+
+com.			172800	IN	NS	i.gtld-servers.net.
+com.			172800	IN	NS	f.gtld-servers.net.
+com.			172800	IN	NS	c.gtld-servers.net.
+com.			172800	IN	NS	b.gtld-servers.net.
+com.			172800	IN	NS	d.gtld-servers.net.
+com.			172800	IN	NS	e.gtld-servers.net.
+com.			172800	IN	NS	j.gtld-servers.net.
+com.			172800	IN	NS	l.gtld-servers.net.
+com.			172800	IN	NS	k.gtld-servers.net.
+com.			172800	IN	NS	g.gtld-servers.net.
+com.			172800	IN	NS	h.gtld-servers.net.
+com.			172800	IN	NS	a.gtld-servers.net.
+com.			172800	IN	NS	m.gtld-servers.net.
+com.			86400	IN	DS	19718 13 2 8ACBB0CD28F41250A80A491389424D341522D946B0DA0C0291F2D3D7 71D7805A
+com.			86400	IN	RRSIG	DS 8 1 86400 20250424050000 20250411040000 53148 . gTWGZeweZUF/ok9fk8Yx0t/N+hNUmC9kk5g6aKgFm9SnLqWWvpj2M+kv Ca38WGg5Jv0lqYCeFfuH3KhSvRBj3wX3YpMJHub+3CxyGHYe/5C+t3gs CF0JnZDCi7UBPCULE070O9dXcUkx6gLbHUAYLcOiCnfeNr/+BYPG5xGq PjaslhN4YQwApk1tJsTr2Fr/O++sOAjKPWUvgs4k++JBEHf97dzzJ2wF g/ggrXGxqnPeDSnHmPRQfN5IV0NHDEZOSZqYoMET+ij4xYxRwM3cJ/kx bJdMMlS2CQsbFTRcoqj7Q93vBQ/nKoxecOC4xpdmlBb8UaNyFF/GWgEi KAkQ2A==
+;; Received 1221 bytes from 2001:500:12::d0d#53(g.root-servers.net) in 41 ms
+
+twoticketstoeverywhere.com. 172800 IN	NS	ns2.twoticketstoeverywhere.com.
+twoticketstoeverywhere.com. 172800 IN	NS	ns1.twoticketstoeverywhere.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN NSEC3 1 1 0 - CK0Q3UDG8CEKKAE7RUKPGCT1DVSSH8LL NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN RRSIG NSEC3 13 2 900 20250417002557 20250409231557 23202 com. DO3p0jQxQYkQPzECI8kiEJJgHLB2tpmnWnp+R2zzpX6ATKqldc3JRz1x jWh2VZH6G28/us/3JkyEtWVLewPm/g==
+7LFCQ88P6LA7MRRFIC9SR2FUC4UUT701.com. 900 IN NSEC3 1 1 0 - 7LFDCN4DOKFPURTOMRFNQSP0CVJQ76RV NS DS RRSIG
+7LFCQ88P6LA7MRRFIC9SR2FUC4UUT701.com. 900 IN RRSIG NSEC3 13 2 900 20250416013334 20250409002334 23202 com. P1oLiISDsF3nh+h/KrDR6/fQ9BvZWy4+l1+QdJOekUBzqNrEIUmW58F9 p/EIqsskfsPiq0FmYMKrclf90srFlw==
+couldn't get address for 'ns2.twoticketstoeverywhere.com': failure
+couldn't get address for 'ns1.twoticketstoeverywhere.com': failure
+dig: couldn't get address for 'ns2.twoticketstoeverywhere.com': no more
