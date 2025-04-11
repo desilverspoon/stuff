@@ -1,0 +1,30 @@
+spoon@spoon-VirtualBox:~$ dig NS twoticketstoeverywhere.com
+
+; <<>> DiG 9.20.0-2ubuntu3.1-Ubuntu <<>> NS twoticketstoeverywhere.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 2631
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 7
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;twoticketstoeverywhere.com.	IN	NS
+
+;; ANSWER SECTION:
+twoticketstoeverywhere.com. 86400 IN	NS	ns1.wordpress.com.
+twoticketstoeverywhere.com. 86400 IN	NS	ns3.wordpress.com.
+twoticketstoeverywhere.com. 86400 IN	NS	ns2.wordpress.com.
+
+;; ADDITIONAL SECTION:
+ns3.wordpress.com.	161379	IN	A	192.0.74.9
+ns2.wordpress.com.	103540	IN	A	198.181.117.9
+ns1.wordpress.com.	171062	IN	A	198.181.116.9
+ns3.wordpress.com.	74846	IN	AAAA	2620:115:c00f::c000:4a09
+ns2.wordpress.com.	60433	IN	AAAA	2a04:fa87:ffff::c6b5:7509
+ns1.wordpress.com.	9049	IN	AAAA	2a04:fa87:ffff::c6b5:7409
+
+;; Query time: 24 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Fri Apr 11 12:57:24 EDT 2025
+;; MSG SIZE  rcvd: 251
