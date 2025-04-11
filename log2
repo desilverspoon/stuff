@@ -1,0 +1,21 @@
+spoon@spoon-VirtualBox:~$ dig mx twoticketstoeverywhere.com
+;; communications error to 127.0.0.53#53: timed out
+
+; <<>> DiG 9.20.0-2ubuntu3.1-Ubuntu <<>> mx twoticketstoeverywhere.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51979
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;twoticketstoeverywhere.com.	IN	MX
+
+;; AUTHORITY SECTION:
+twoticketstoeverywhere.com. 300	IN	SOA	ns1.wordpress.com. hostmaster.wordpress.com. 2005071858 14400 7200 604800 300
+
+;; Query time: 23 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Fri Apr 11 13:49:26 EDT 2025
+;; MSG SIZE  rcvd: 116
