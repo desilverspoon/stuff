@@ -1,0 +1,25 @@
+$TTL    86400
+@       IN      SOA     ns1.yourdomain.com. admin.yourdomain.com. (
+                        2025041101         ; Serial
+                        3600               ; Refresh
+                        1800               ; Retry
+                        604800             ; Expire
+                        86400 )            ; Negative Cache TTL
+
+; Name servers
+@       IN      NS      ns1.yourdomain.com.
+@       IN      NS      ns2.yourdomain.com.
+
+; A records for name servers
+ns1     IN      A       YOUR_SERVER_IP
+ns2     IN      A       YOUR_SERVER_IP
+
+; Mail server
+@       IN      MX      10      mail.yourdomain.com.
+mail    IN      A       YOUR_SERVER_IP
+
+; SPF Record
+@       IN      TXT     "v=spf1 ip4:YOUR_SERVER_IP -all"
+
+; DMARC Record
+_dmarc  IN      TXT     "v=DMARC1; p=none; rua=mailto:dmarc-reports@yourdomain.com"
