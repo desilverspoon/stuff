@@ -1,0 +1,27 @@
+$TTL    86400
+@       IN      SOA     ns1.twoticketstoeverywhere.com. admin.twoticketstoeverywhere.com. (
+                        2025041102         ; Serial
+                        3600               ; Refresh
+                        1800               ; Retry
+                        604800             ; Expire
+                        86400 )            ; Negative Cache TTL
+
+; Name servers
+@       IN      NS      ns1.twoticketstoeverywhere.com.
+@       IN      NS      ns2.twoticketstoeverywhere.com.
+
+; A records for name servers
+ns1     IN      A       71.135.79.146
+ns2     IN      A       71.135.79.146
+
+; Mail server
+@       IN      MX      10      mail.twoticketstoeverywhere.com.
+mail    IN      A       71.135.79.146
+
+; SPF Record
+@       IN      TXT     "v=spf1 ip4:71.135.79.146 -all"
+
+; DMARC Record
+_dmarc  IN      TXT     "v=DMARC1; p=none; rua=mailto:dmarc-reports@twoticketstoeverywhere.com"
+
+
